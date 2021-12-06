@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.showcase {
+    height: 100vh;
+    background-color: white;
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: hsl(210, 10%, 33%);
+    padding-bottom: 30px;
+}
+.showcase .logo-container {
+    margin-bottom: 10px;
+}
+.showcase .text-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+}
+.showcase h1 {
+    font-weight: 600;
+    font-size: 42px;
+}
+.showcase h4 {
+    opacity: .5;
+    font-size: 18px;
+}
+.buttons-container {
+    display: flex;
+    gap: 20px;
+}
+.buttons-container button {
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */ 
+}
+.buttons-container button:hover {
+    opacity: .8;
+}
+.buttons-container button:nth-child(1) {
+    background-color: hsl(171, 66%, 44%);
+    /* border-bottom: black 1px solid; */
+    /* box-shadow: 5px 6px 20px 0.5px hsl(171, 66%, 44%); */
+}
+.buttons-container button:nth-child(2) {
+    background-color: hsl(233, 100%, 69%);
+}
+section {
+    margin-bottom: 100px;
+}
+.com-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.titles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    gap: 20px;
+    color: hsl(210, 10%, 33%);
+}
+.title {
+    font-size: 36px;
+}
+.subtitle {
+    font-size: 18px;
+    opacity: .5;
+}
+.com-section .bottom-part {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.com-section .bottom-part .image-container {
+    flex: 1;
+    margin-left: -50px;
+    justify-self: center;
+    align-self: center;
+}
+.com-section .bottom-part .image-container img {
+    max-width: 50vw;
+}
+.com-section .bottom-part .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 50px;
+}
+.com-section .bottom-part .info-container {
+    width: 70%;
+    color: hsl(210, 10%, 33%);
+}
+.com-section .bottom-part .info-container h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.com-section .bottom-part .info-container p {
+    font-size: 18px;
+    opacity: .6;
+}
+.device-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.device-section .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.device-section .image-container img {
+    width: 90%;
+}
+.logos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.logos-section .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 60px;
+    grid-gap: 10px;
+}
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    color: hsl(210, 10%, 33%);    
+}
+.cards .card h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.cards .card p {
+    opacity: 0.6;
+    width: 80%;
+}
+.logos-section .logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    justify-content: space-around;
+}
+.logos-section .logos img {
+    width: 15%;
+}
+.clipboard-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer {
+    display: flex;
+    gap: 30px;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+footer .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .logo-container img {
+    max-width: 50px;
+}
+footer .links {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: hsl(210, 10%, 33%);
+    grid-gap: 25px;
+    justify-content: center;
+}
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(210, 10%, 33%);
+}
+footer .right-part  {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .right-part .icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+footer .right-part .icons img {
+    width: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    .showcase .text-container {
+        width: 70%;
+    }
+    .com-section .bottom-part {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .com-section .bottom-part .image-container {
+        margin-left: 0;
+    }
+    .com-section .bottom-part .image-container img {
+        max-width: 80vw;
+    }
+    .com-section .bottom-part .text-container {
+        align-items: center;
+        text-align: center;
+    }
+    footer .links {
+        grid-gap: 15px;
+    }
+    .links a {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .showcase .text-container {
+        width: 80%;
+    }
+    .logos-section .cards {
+        grid-template-columns:  1fr;
+        grid-gap: 40px;
+    }
+    footer {
+        gap: 10px;
+    }
+    footer .logo-container img {
+        max-width: 35px;
+    }
+    footer .right-part .icons img {
+        width: 15px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .logos-section .logos {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .logos-section .logos img {
+        width: 100px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+    footer .links {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 25px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .buttons-container {
+        flex-direction: column;
+    }
+}
